@@ -1,0 +1,27 @@
+% Título:  TEORAMA FUNDAMENTAL DEL CALCULO 
+% Descripción: Script para la resolucion de ejercicios aplicando el teorama fundamental del calculo  
+% el tipo de funcion es  f=- (1/ sqrt (25+3*x))
+% Autor: Ana Lilia Arce Salvador (analili6) al5853542@gmail.com
+% Fecha: 27/05/21
+% Sesión: 5
+%ejercicio 5
+%ESPECIFICACIONES :Es necesario importar el paquete symbolic con 
+%pkg load symbolic  para su correcto funcionamiento 
+
+clc
+clear
+syms x;
+% funcion tipo = - (1/ sqrt (25+3*x))
+fx = input ("Ingrese la función:")
+funcion = inline(char (fx))
+% establecer los limites 
+a = input ("ingresa valor de a")
+b = input ("ingrasa valor de b")
+% operaciones 
+resultado =(-2/3 *(sqrt (25+3 *(b))) - (-2/3 * sqrt (25+3*(a)))
+
+% rango 
+x = 0: 0,2: 3;
+f = x;
+trama (f, x)
+barra (f, x, "m")
