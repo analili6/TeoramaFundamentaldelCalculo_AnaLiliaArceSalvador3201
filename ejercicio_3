@@ -19,8 +19,9 @@ a = input ("ingresa valor de a")
 b = input ("ingrasa valor de b")
 % operaciones 
 resultado = (2 * b) * (sqrt (2 * b)) / 3 + (3 * b * 2) / 4 - (2 * a) * (sqrt (2 * a)) / 3 + (3 * a * 2) / 4
+
 % rango 
-x = 1: 0,2: 2;
+x = 0: 0,2: 8;
 f = x;
 trama (f, x)
 barra (f, x, "m")
