@@ -1,0 +1,27 @@
+% Título:  TEORAMA FUNDAMENTAL DEL CALCULO 
+% Descripción: Script para la resolucion de ejercicios aplicando el teorama fundamental del calculo  
+% el tipo de funcion es  f= 1 sqrt(x)/x^2
+% Autor: Ana Lilia Arce Salvador (analili6) al5853542@gmail.com
+% Fecha: 27/05/21
+% Sesión: 5
+%ejercicio 4
+%ESPECIFICACIONES :Es necesario importar el paquete symbolic con 
+%pkg load symbolic  para su correcto funcionamiento 
+
+clc
+clear
+syms x;
+% funcion tipo = 1 + sqrt(x)/x^2
+fx = input ("Ingrese la función:")
+funcion = inline(char (fx))
+% establecer los limites 
+a = input ("ingresa valor de a")
+b = input ("ingrasa valor de b")
+% operaciones 
+resultado = (-1 / b - 2 / sqrt (b)) - (-1 / a - 2 / sqrt (a))
+% rango 
+
+x = 1: 0,2: 4;
+f = x;
+trama (f, x)
+barra (f, x, "m")
